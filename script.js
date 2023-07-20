@@ -83,7 +83,7 @@ function generatePassword(){
   //for loop will iterate through the length the user inputs 
   for (var i = 0; i < passLength; i++){
     var randomPassword = charForPassword[Math.floor(Math.random() * charForPassword.length)]; // this will randomly select characters from our array created from the user input and put it into random password
-    finalPassword.push(randomPassword); // this will push the values into another array this is done because otherwise it causes an undefined error
+    finalPassword.push(randomPassword); // this will push the values into another array this is done so we can have all characters in one string and not separate
     console.log(finalPassword); 
   }
   stringPassword = finalPassword.join(""); // the join method is used to get rid of the commas from an array, whatever goes inside the ("") is what replaces the (,) in the string
