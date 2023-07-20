@@ -5,20 +5,25 @@ var upperLetters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
 var specialChar = [" ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
 var charForPassword = []; //will hold the characters 
 var randomPassword = []; // will hold the randomized password
-
+var finalPassword = []; //this will hold the final password in the form of an array 
+var stringPassword; //this will hold the final password in string form where there won't be any commas in the final product
 //if button is clicked to generate password
 //prompts for password criteria are presented and user selects
 //promp for password length is shown
 //make sure that length of password is more than 8 and less than 128
 //prompt for character types, lower case, uppercase, numeric and or special characters
 //validate the users choice, and a character 
+//password should be written to page
+
+
+//console log will be used to verify result and make corrections
 
 function generatePassword(){
-  alert("Criteria will be shown shortly please type how long you would like your password. Also please use y for yes and n for no");
+  alert("Criteria will be shown shortly please type how long you would like your password. Also please use y for yes and n for no"); // alerts display messages to the website after occurs
   
   //this while loop will make sure that the value of the length meets the minimum and maximum requirement
   var passLength = prompt("How long would you like the password to be (has to be longer than 8 character and shorter than 128 characters)");
-  while(passLength <= 8 || passLength>=128){
+  while(passLength < 8 || passLength>128){
     alert("Please make sure that your password is at  least 8 characters long and at most is 128 characters long");
     var passLength = prompt("How long would you like the password to be (has to be longer than 8 character and shorter than 128 characters)");
   }
@@ -75,11 +80,15 @@ function generatePassword(){
     generatePassword();
   }
 
-  console.log(randomPassword);
-  for (var i = 0; i < numMess; i++){
-    var randomPassword = charForPassword[Math.floor(Math.random() * charForPassword.length)];
-    console.log(randomPassword);
+  //for loop will iterate through the length the user inputs 
+  for (var i = 0; i < passLength; i++){
+    var randomPassword = charForPassword[Math.floor(Math.random() * charForPassword.length)]; // this will randomly select characters from our array created from the user input and put it into random password
+    finalPassword.push(randomPassword); // this will push the values into another array this is done because otherwise it causes an undefined error
+    console.log(finalPassword); 
   }
+  stringPassword = finalPassword.join(""); // the join method is used to get rid of the commas from an array, whatever goes inside the ("") is what replaces the (,) in the string
+  console.log(stringPassword);
+  return stringPassword; // returns our final password so that it is displayed on the website
 }
 
 // Get references to the #generate element
