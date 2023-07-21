@@ -15,4 +15,5 @@ sixth: comments were added, while loop that checked size of array was altered si
 seventh: commit changed some comments that were incorrect
 
 
-https://github.com/Nefta007/Randomized-Password-Generator                                                                      https://nefta007.github.io/Randomized-Password-Generator/                                                                       ![image](https://github.com/Nefta007/Randomized-Password-Generator/assets/135322031/c5b1c146-e503-4a89-af59-8360caebdfc6)
+https://github.com/Nefta007/Randomized-Password-Generator                                                                      https://nefta007.github.io/Randomized-Password-Generator/                                                                       ![image](https://github.com/Nefta007/Randomized-Password-Generator/assets/135322031/c5b1c146-e503-4a89-af59-8360caebdfc6)      ![image](https://github.com/Nefta007/Randomized-Password-Generator/assets/135322031/a69f45f7-32ba-4f16-8fe9-c64e4bf431b9)     
+
