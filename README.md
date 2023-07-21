@@ -13,3 +13,6 @@ fourth: the addition of 4 arrays containing numbers, lower case letters, capital
 fifth: altered the name of the lowercase letter to make it easier to understand as well as the creation of the generatePassowrd function
 sixth: comments were added, while loop that checked size of array was altered since it was not accepting correct constraints, and for loop at the end was changed because an error was being printed
 seventh: commit changed some comments that were incorrect
+
+
+https://github.com/Nefta007/Randomized-Password-Generator
